@@ -1,0 +1,5 @@
+[Wed Aug 31 11:53:14.292224 2016] [mpm_winnt:notice] [pid 5728:tid 376] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Wed Aug 31 11:53:14.292224 2016] [mpm_winnt:notice] [pid 5728:tid 376] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Wed Aug 31 11:53:14.292224 2016] [core:notice] [pid 5728:tid 376] AH00094: Command line: 'C:\\Users\\PC1\\Documents\\GitHub\\CloudCheetah-Web\\usbwebserver/apache2/bin/httpd_usbwv8.exe -d C:/Users/PC1/Documents/GitHub/CloudCheetah-Web/usbwebserver/apache2'
+[Wed Aug 31 11:53:14.326226 2016] [mpm_winnt:notice] [pid 5728:tid 376] AH00418: Parent: Created child process 5468
+[Wed Aug 31 11:53:14.993264 2016] [mpm_winnt:notice] [pid 5468:tid 392] AH00354: Child: Starting 64 worker threads.

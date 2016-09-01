@@ -1,0 +1,219 @@
+*
+{
+    font-family: century gothic;margin:0;
+}
+body {
+    font-family: "Century Gothic", margin:0;
+}
+
+.sidenavCLOSE {
+    height: 100%;
+    width: 5%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3F51B5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    vertical-align: middle;
+    display: table;
+}
+.sidesideBTN, .sidesideBTNSelected{
+    -webkit-transition-property: width, height; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-property: width, height;
+    transition-duration: 1s;
+}
+.sidenavCLOSE .sidenavCloseInner{
+    display: table-cell; 
+    vertical-align: middle;
+}
+.sidenavCLOSE .myProfile{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+.sidenavCLOSE .myImage{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+div.sidenavCLOSE button{
+    width: 5vw;
+    height: 5vw;
+    border:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #3F51B5;
+    background-size: 50% 45%;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    padding-top: 55%;
+    color:#ffffff;
+    font-size:1.6vh;
+    border-right: solid .4vw #3F51B5;
+    outline:none;
+}
+.sideBTN:hover{
+    background-color: #303F9F;
+    border-right: solid .4vw #303F9F;
+}
+div.sidenavCLOSE .sideBTNSelected{
+    border-right: solid .4vw #448AFF;
+}
+.sideBTNSelected:hover{
+    background-color: #303F9F;
+}
+.sidenavOPEN {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3F51B5;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.sidenavOPEN .sidenavCloseInner{
+    margin-top:0;
+}
+.sidenavOPEN .myProfile{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    visibility: visible;
+    height: 15%;
+    float: left;
+    width: 100%;
+    display: table;
+}
+.sidenavOPEN .myImage{
+    height: 6vw;
+    width: 6vw;
+    margin-left:5%;
+    margin-right:5%;
+    border-radius: 50%;
+    border: solid 2px #ffffff;
+    float:left;
+}
+.sidenavOPEN .postion{
+    height: 6vw;
+    width: 6vw;
+    margin-left:5%;
+    margin-right:5%;
+    border-radius: 50%;
+    border: solid 2px #ffffff;
+    float:left;
+}
+div.sidenavOPEN button{
+    width: 20vw;
+    height: 4vw;
+    border:none;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #3F51B5;
+    background-size: 10% 50%;
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+    padding-left: 20%;
+    color:#ffffff;
+    font-size:2vh;
+    border-right: solid .4vw #3F51B5;
+    text-align: left;
+    outline:none;
+}
+div.sidenavOPEN .sideBTNSelected{
+    border-right: solid .4vw #448AFF;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.top
+{
+	background: #EDEDED;
+	color:#3F51B5;
+	border-bottom: 1px solid #D9DEE4;
+	margin: 0;
+	height: 7vh;
+	padding-left: 1vw;
+	padding-top: .5vh;
+	padding-bottom: .5vh;
+    font-size:5vh;
+}
+.mainCLOSE {
+    transition: margin-left .5s;
+    margin-left: 5%;
+}
+.mainOPEN {
+    transition: margin-left .5s;
+    margin-left: 20%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width:800px) {
+    .sidenavCLOSE {
+        height: 100%;
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -20%;
+        background-color: #3F51B5;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .sidenavCloseInner {
+        display: table-cell; 
+        vertical-align: middle;
+        width: inherit;
+    }
+    .sidenavOPEN {
+        height: 100%;
+        width: 60%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #3F51B5;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .top
+    {
+        background: #EDEDED;
+        color:#3F51B5;
+        border-bottom: 1px solid #D9DEE4;
+        margin: 0;
+        height: 50px;
+        padding-left: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        font-size:32px;
+    }
+    .mainCLOSE {
+        transition: margin-left .5s;
+        margin-left: 0;
+    }
+    .mainOPEN{
+        transition: margin-left .5s;
+        margin-left: 60%;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+}
